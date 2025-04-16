@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class QueueManagementSystem {
+    private static Queue<String> ticketQueue = new LinkedList<>();
+    private static int ticketCounter = 1;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\n=== Queue Management System ===");
+            System.out.println("1. Generate Ticket");
+            System.out.println("2. Call Next Ticket");
+            System.out.println("3. View Queue Status");
+            System.out.println("4. Reset Queue");
+            System.out.println("5. Exit");
+            System.out.print("Choose an option: ");
+
+            choice = scanner.nextInt();
